@@ -1,13 +1,1383 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none !important;
+  display: inline-block;
+}
+img{
+  vertical-align: middle;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0 ;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* =============================== Common Css Part End ==================================== */
+
+
+
+
+/* =============================== header Css Part Start ==================================== */
+#head{
+  background-color: #477018;
+  padding: 15px 0;
 }
+header p{
+  font-weight: 400;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 0;
+}
+/* =============================== header Css Part End ==================================== */
+
+
+/* =============================== Menu Css Part Start ==================================== */
+
+.menu-bg{
+  padding: 16px 0 !important; 
+}
+.menu-bg .navbar-brand{
+  font-family: 'Rye', cursive;
+  color: #477018 !important;
+  font-size: 30px;
+}
+.menu-bg .nav-link{
+  padding: 0 25px !important;
+  color: black;
+  font-weight: 400;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: relative;
+}
+.menu-bg .nav-link::after{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  background-color: #477018;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  opacity: 0;
+}
+.menu-bg .nav-link:hover{
+ color: #477018;
+ transform: scale(1.1);
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ -webkit-transform: scale(1.1);
+}
+.menu-bg .nav-link:hover::after{
+  width: 60%;
+  opacity: 1;
+  top: 110%;
+}
+.nav_cart{
+  padding-left: 124px;
+}
+svg.shopping_bag{
+  color: #000;
+  font-size: 22px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-right: 16px;
+}
+svg.shopping_bag:hover{
+  color: #477018;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+svg.search{
+  color: #000;
+  font-size: 18px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+svg.search:hover{
+  color: #477018;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/* =============================== Menu Css Part End ==================================== */
+
+
+
+/* =============================== Banner Css Part Start ==================================== */
+
+#Banner{
+  padding: 190px 0;
+  background-color: #f8f8f8;
+  position: relative;
+}
+.banner_text h1{
+  font-size: 65px;
+  font-weight: 700;
+  line-height: 78px;
+  color: #282828;
+  margin-bottom: 20px;
+}
+.banner_text span{
+  color: #F47606;
+}
+.banner_text p{
+  color: #676767;
+  font-size: 16px;
+  line-height: 28px;
+  padding-right: 120px;
+}
+.bnr_btn a{
+  padding: 14px 50px;
+  background-color: #F47606;
+  color: #fff !important;
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.banner_img{
+  position: absolute;
+  top: 50%;
+  right: -24%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+/* =============================== banner Css Part End ==================================== */
+
+
+/* =============================== Details Css Part Start ==================================== */
+
+#detail{
+  padding: 130px 0;
+}
+.detail_svg{
+  margin-bottom: 30px;
+}
+.del_item{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  cursor: pointer;
+}
+.detail_svg path{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.del_item:hover .detail_text h5{
+  color: #F47606;
+}
+.del_item:hover .detail_svg path{
+  fill: #000;
+}
+.detail_text h5{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.detail_text p{
+  color: #676767;
+  margin-bottom: 0;
+}
+/* =============================== Details Css Part End ==================================== */
+
+
+/* =============================== Trending Product Css Part End ==================================== */
+
+#Tproduct{
+  padding-bottom: 130px;
+}
+.tp_head h2{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.veg_item{
+  padding: 30px 23px;
+  background-color: #fafafa;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  margin-bottom: 40px;
+}
+.veg_img{
+  margin-right: 15px;
+}
+.Veg-1{
+  margin-bottom: 15px;
+}
+.veg_text a{
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  color: #000;
+}
+.veg_text a:hover{
+  color: #F47606;
+}
+.veg_shop{
+  background: url(../public/images/Rectangle\ 3126.png) no-repeat center / cover;
+  padding: 43px 32px 182px 32px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.veg_shop h4{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.veg_shop p{
+  font-weight: normal;
+  line-height: 28px;
+  color: #676767;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+.veg_shop a{
+  color: #F47606 ;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline !important;
+}
+.veg_shopp{
+  background: url(../public/images/Rectangle\ 3127.png) no-repeat center / cover;
+  padding: 43px 32px 182px 32px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+}
+.veg_shopp h4{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+.veg_shopp p{
+  font-weight: normal;
+  line-height: 28px;
+  color: #676767;
+  margin-bottom: 10px;
+  padding-right: 30px;
+}
+.veg_shopp a{
+  color: #F47606 ;
+  font-weight: 600;
+  font-size: 20px;
+  text-decoration: underline !important;
+}
+.pro_item{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.pro_img{
+ position: relative;
+ margin-bottom: 20px;
+}
+.pro_over{
+ position: absolute;
+ width: 100%;
+ height: 30%;
+ top: 0;
+ left: 0;
+ background-color: rgba(40, 40, 40, 0.8);
+ border-radius: 25px;
+ -webkit-border-radius: 25px;
+ -moz-border-radius: 25px;
+ -ms-border-radius: 25px;
+ -o-border-radius: 25px;
+ transition: 0.5s;
+ opacity: 0;
+ -webkit-transition: 0.5s;
+ -moz-transition: 0.5s;
+ -ms-transition: 0.5s;
+ -o-transition: 0.5s;
+ z-index: 1;
+}
+.pro_item:hover .pro_over{
+  opacity: 1;
+  height: 100%;
+}
+.pro_over ul{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+.pro_over ul li a{
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: #fff;
+  margin-right: 20px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.pro_over ul li:last-child a{
+  margin-right: 0;
+}
+.pro_over ul li a{
+  font-size: 20px;
+  color: #F47606;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.pro_over ul li a:hover{
+  background-color: #000;
+  color: #F47606;
+}
+.pro_item:hover .pro_over ul{
+  top: 50%;
+}
+.pro_text h5{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  color: #282828;
+  margin-bottom: 10px;
+}
+.pro_text p{
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #969696;
+}
+.pro_star{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.pro_star ul{
+  display: flex; 
+  margin: 0;
+  padding: 0;
+}
+.pro_star ul li a{
+  margin-right: 5px;
+  font-size: 20px;
+  color: #FFAE00;
+}
+.pro_star ul li:last-child a{
+  margin-right: 0;
+}
+.row1, .row2, .row3{
+  margin-bottom: 24px;
+}
+/* =============================== Trending Product Css Part End ==================================== */
+
+
+/* =============================== Deal Css Part Start ==================================== */
+
+#deal{
+  padding: 130px 0;
+  background-color: #f8f8f8;
+}
+.deal_head h2{
+  font-size: 45px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 54px;
+}
+.deal_text h3{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.deal_text p{
+  line-height: 28px;
+  color: #676767;
+  padding: 0 200px 0 0;
+  margin-bottom: 30px;
+}
+.deal_btn a{
+  padding: 14px 50px;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  background-color: #F47606;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.deal_day{
+  margin-right: 27.27px;
+}
+.deal_day h6{
+  font-size: 36.11px;
+  font-weight: 700;
+  line-height: 43px;
+  margin-bottom: 4.1px;
+}
+.deal_day p{
+  font-size: 28.09px;
+  line-height: 33.99px;
+  font-weight: 500;
+}
+/* =============================== Deal Css Part End ==================================== */
+
+
+/* =============================== Trendy Products Css Part Start ==================================== */
+
+#top_rated{
+  padding: 130px 0;
+  position: relative;
+}
+.top_banner img{
+  position: absolute;
+  left: 0;
+  width: 34%;
+}
+.t_rated2{
+  padding-top: 130px;
+}
+.top_bannerr img{
+  position: absolute;
+  right: 0;
+  width: 34%;
+}
+.rate_btn button{
+  border: none;
+  background-color: transparent;
+  position: relative;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 167px;
+  margin-bottom: 50px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.rate_btn button:hover{
+  color: #f47606;
+}
+.rate_btn button::after{
+  position: absolute;
+  content: '';
+  bottom: -16px;
+  left: 50%;
+  width: 0%;
+  height: 2px;
+  background-color: #f47606;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.rate_btn button:last-child{
+  margin: 0;
+}
+.rate_btn button:hover::after{
+  width: 100%;
+  opacity: 1;
+}
+/* =============================== Trendy Products Css Part End ==================================== */
+
+
+/* =============================== Testi Css Part Start ==================================== */
+
+#testi{
+  padding: 130px 0;
+  background-color: #f8f8f8;
+}
+.testi_text h3{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 27px;
+}
+.testi_text img{
+  margin-bottom: 25px;
+}
+.testi_text ul{
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+.testi_text ul li{
+  color: #FFC24B;
+}
+.testi_text p{
+  color: #6C6C6C;
+  line-height: 28px;
+  padding-right: 150px;
+  margin: 0;
+  margin-bottom: 19px;
+}
+.t_pro_img img{
+  margin-right: 27px;
+}
+.t_pro_text h5{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  margin: 0;
+}
+.t_pro_text p{
+  margin: 0;
+  color: #6C6C6C;
+}
+.slick-slide > div {
+  margin: 0 10px;
+}
+.slick-list {
+  margin: 0 -10px;
+}
+.slick-prev, .slick-next{
+  position: absolute;
+}
+/* =============================== Testi Css Part End ==================================== */
+
+
+/* =============================== Organic News Css Part Start ==================================== */
+
+#Onews{
+  padding: 130px 0;
+}
+.new_img{
+  margin-bottom: 20px;
+}
+.new_text_main{
+  position: relative;
+}
+.new_box{
+  position: absolute;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 13px 18px;
+}
+.new_box p{
+  margin: 0;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.new_text{
+  margin-left: 100px;
+}
+.new_text h6{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  padding-right: 60px;
+  margin-bottom: 10px;
+}
+.new_text p{
+  color: #6C6C6C;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.new_btn a{
+  color: #F47606;
+  font-weight: 600;
+}
+.new_right{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  margin-top: -2px;
+}
+.new_btn:hover .new_right{
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+}
+/* =============================== Organic News Css Part End ==================================== */
+
+/* =============================== Footer Css Part Start ==================================== */
+
+footer{
+  padding: 130px 0;
+  background-color: #f8f8f8;
+}
+.footer_logo a{
+  font-family: 'Rye', cursive;
+  color: #477018 !important;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 37px;
+  margin-bottom: 20px;
+}
+.footer_logo p{
+  color: #6C6C6C;
+  margin: 0;
+  line-height: 28px;
+  margin-bottom: 5px;
+}
+.footer_head h5{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #363636;
+  margin-bottom: 35px;
+}
+.footer_head ul{
+  margin: 0;
+  padding: 0;
+}
+.footer_head ul li a{
+  color: #6C6C6C;
+  line-height: 28px;
+  margin-bottom: 10px;
+}
+.footer_head ul li a:hover{
+  color: #F47606;
+  text-decoration: underline !important;
+}
+.footer_head p{
+  color: #6C6C6C;
+}
+.footer_input{
+  margin-top: 20px;
+  position: relative;
+}
+.footer_input input{
+  width: 330px;
+  height: 56px;
+  border: 1px solid #c9c9c9;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 14px 14px 14px 16px;
+  outline: none;
+}
+.footer_input input::placeholder{
+  color: #676767;
+  opacity: 0.38;
+}
+.footer_btn{
+  position: absolute;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.footer_btn a{
+  width: 96px;
+  height: 56px;
+  line-height: 56px;
+  background-color: #F47606;
+  text-align: center;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.footer_input:hover .footer_btn{
+  right: 85px;
+}
+/* =============================== Footer Css Part End ==================================== */
+
+
+/* =============================== Exteame Css Part start ==================================== */
+
+#extream{
+  padding-bottom: 130px;
+}
+.ex_text{
+  padding: 132px 94px 132px 62px;
+  background: url(../public/images/AcPics\ \(2\).png) no-repeat center / cover;
+}
+.ex_text h2{
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 90px;
+  margin-bottom: 20px;
+}
+.ex_text span{
+  color: #F47606;
+}
+.ex_text p{
+  color: #676767;
+  padding-right: 80px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.ex_btn a{
+  padding: 14px 50px;
+  background-color: #477018;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+}
+.ex_text2{
+  padding-top: 43px;
+  padding-bottom: 242px;
+  background: url(../public/images/AcPics\ \(3\).png) no-repeat center / cover;
+  position: relative;
+  margin-bottom: 24px;
+}
+.ex_t{
+  position: absolute;
+  right: 30px;
+}
+.ex_t h3{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+.ex_t_btn a{
+  padding: 6px 20px;
+  background-color: #477018;
+  font-weight: 600;
+  color: #fff !important;
+}
+/* =============================== Extreame Css Part End ==================================== */
+
+
+/* =============================== Offer Css Part start ==================================== */
+
+#offer{
+  padding-bottom: 130px;
+}
+.offer{
+  background: url(../public/images/offer\ \(2\).png) no-repeat center / cover;
+  padding: 67px 104px 63px 53px;
+}
+.offer h6{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer h3{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer_btn a{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #F47606 !important;
+  text-decoration: underline !important;
+}
+.offer1{
+  background: url(../public/images/offer\ \(3\).png) no-repeat center / cover;
+  padding: 67px 104px 63px 53px;
+}
+.offer1 h6{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer1 h3{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer_btn a{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #F47606 !important;
+  text-decoration: underline !important;
+}
+.offer2{
+  background: url(../public/images/offer\ \(1\).png) no-repeat center / cover;
+  padding: 67px 104px 63px 53px;
+}
+.offer2 h6{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer2 h3{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.offer_btn a{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #F47606 !important;
+  text-decoration: underline !important;
+}
+/* =============================== Offer Css Part End ==================================== */
+
+
+/* =============================== Treanding Css Part Start ==================================== */
+
+#treanding{
+  padding-bottom: 130px;
+}
+.trending_products h2{
+  font-size: 35px;
+  line-height: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.trending_btn button{
+  background-color: transparent;
+  border: none;
+  margin-right: 50px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  position: relative;
+}
+.trending_btn button::after{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F47606;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.trending_btn button:hover::after{
+  width: 100px;
+  opacity: 1;
+}
+.trending_btn button:last-child{
+  margin-right: 0;
+}
+.trending_btn button:hover{
+  color: #F47606;
+}
+.t_items{
+  margin-top: 52px;
+}
+.t_img{
+  position: relative;
+  margin-bottom: 30px;
+}
+.t_over{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 30%;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.t_items:hover .t_over{
+  height: 100%;
+  opacity: 1;
+}
+.t_text h3{
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.t_text ul{
+  margin: 0;
+  padding: 0;
+}
+.t_text ul li{
+  font-size: 20px;
+  color: #FFAE00;
+  margin-bottom: 12px;
+}
+.t_text p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.t_over ul{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transition: 0.9s;
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -ms-transition: 0.9s;
+  -o-transition: 0.9s;
+}
+.t_over ul li{
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  margin-right: 15px;
+  color: #F47606 !important;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.t_over ul li:hover{
+  background-color: #000;
+}
+.t_over ul li:last-child{
+  margin-right: 0;
+}
+.t_over ul li a{
+  color: #F47606 !important;
+}
+.t_items:hover .t_over ul{
+  top: 50%;
+}
+/* =============================== Treanding Css Part End ==================================== */
+
+
+/* =============================== Healthy Css Part Start ==================================== */
+
+#healthy{
+  padding-bottom: 130px;
+}
+.healthy{
+  padding: 92px 546px 92px 104px;
+  background: url(../public/images/Rectangle\ 3073.png) no-repeat center / cover;
+}
+.healthy h2{
+   font-weight: 700;
+   font-size: 45px;
+   line-height: 54px;
+   margin-bottom: 20px;
+}
+.healthy p{
+  color: #676767;
+  line-height: 28px;
+  padding-right: 250px;
+  margin-bottom: 30px;
+}
+.heal_btn a{
+  padding: 14px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #477018;
+  color: #fff;
+}
+
+/* =============================== Healthy Css Part End ==================================== */
+
+
+/* =============================== Flash Deal Css Part Start ==================================== */
+
+#flash_deal{
+  padding-bottom: 130px;
+}
+.flash_head h3{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 50px;
+}
+.flash_time{
+  padding: 0 94px 30px 94px;
+  background-color: #f7f7f7;
+}
+.flash_timee{
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 11px;
+}
+.flash_timee h6{
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+  color: #F47606;
+}
+.flash_timee p{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 700;
+  color: #F47606;
+}
+.flash_text{
+  padding-bottom: 47px;
+  background-color: #f7f7f7;
+}
+.flash_text h6{
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #F47606;
+}
+.flash_text ul li{
+  color: #FFAE00;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+.flash_text p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.cart_btn a{
+  padding: 12px 58px;
+  background-color: #F47606;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+/* =============================== Flash Deal Css Part End ==================================== */
+
+
+/* =============================== Flash Deal Css Part End ==================================== */
+
+#top_ratedd{
+  padding-bottom: 130px;
+}
+.top_rate_head h2{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  margin-bottom: 50px;
+}
+.top_rating_img{
+  overflow: hidden;
+}
+.top_rating_img img{
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.top_rating_img img:hover{
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+}
+.top_rating_text{
+  margin-top: 30px;
+}
+.top_rating_text h4{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 12px;
+}
+.top_rating_text ul{
+  padding: 0;
+  margin-bottom: 3px;
+}
+.top_rating_text ul li{
+  color: #FFAE00;
+}
+.top_rating_text p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.top_rating_text  del{
+  color: #a9a9a9;
+}
+/* =============================== Flash Deal Css Part End ==================================== */
+
+
+/* =============================== Kicthen Css Part start ==================================== */
+
+#kicthen{
+  padding-bottom: 130px;
+}
+.kicthen1{
+  padding: 73px 294px 73px 32px;
+  background: url(../public/images/kithcen\ \(2\).png) no-repeat center / cover;
+}
+.kicthen_text h6{
+  font-size: 20px;
+  font-weight: 600;
+  color: #F47606;
+}
+.kicthen_text h2{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+.ki_btn a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #F47606;
+  text-decoration: underline !important;
+}
+.kicthen2_text{
+  padding: 73px 294px 73px 32px;
+  background: url(../public/images/kithcen\ \(1\).png) no-repeat center / cover;
+}
+.kicthen2_text h6{
+  font-size: 20px;
+  font-weight: 600;
+  color: #F47606;
+}
+.kicthen2_text h2{
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+.ki2_btn a{
+  font-size: 20px;
+  font-weight: 600;
+  color: #F47606;
+  text-decoration: underline !important;
+}
+/* =============================== Kicthen Css Part End ==================================== */
+
+
+/* =============================== Discover Css Part Start ==================================== */
+
+#disco{
+  padding-bottom: 130px;
+}
+.dis_pro_item{
+  position: relative;
+}
+.dis_over{
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  top: 0;
+  left: 0;
+  background-color: rgba(40, 40, 40, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.dis_pro_item:hover .dis_over{
+  height: 100%;
+  opacity: 1;
+}
+.disco_head h2{
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 35px;
+}
+.disco_head ul li{
+  margin-right: 40px;
+}
+.disco_head ul li:last-child{
+  margin-right: 0;
+}
+.disco_head ul li button{
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #F47606;
+  position: relative;
+}
+.disco_head ul li button::after{
+  position: absolute;
+  content: '';
+  width: 0%;
+  height: 2px;
+  bottom: -4px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F47606;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.disco_head ul li button:hover::after{
+  width: 100%;
+  opacity: 1;
+}
+.dis_pro_item{
+  margin-top: 50px;
+}
+.dis_pro_text{
+  background-color: #fafafa;
+  padding: 58px 40px 58px 0;
+}
+.dis_pro_text h6{
+  font-weight: 600;
+  line-height: 19px;
+  margin-bottom: 2px;
+}
+.dis_pro_text ul li{
+  color: #F47606;
+  margin-bottom: 4px;
+  font-size: 20px;
+}
+.dis_pro_text p{
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.dis_pro_text del{
+ color: #a9a9a9; 
+}
+/* =============================== Discover Css Part End ==================================== */
+
